@@ -1,0 +1,135 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #ffe4e1; /* Light pink background */
+    padding: 20px;
+    border-radius: 0; /* No rounded corners for rectangular box */
+    width: 50%; /* Decrease width to cover less area */
+    max-width: 60%; /* Max width to ensure it fits within the viewport */
+    max-height: 80vh; /* Limit the height */
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+    position: relative;
+    border: 2px solid #db7093; /* Darker pink border */
+    margin: 0 auto; /* Center the modal horizontally */
+}
+
+.modal-image {
+    width: 100%;
+    max-width: 300px; /* Fixed width for the image */
+    height: 300px; /* Fixed height for the image */
+    object-fit: cover;
+    border-radius: 0; /* No rounded corners for rectangular image */
+    border: 2px solid #db7093; /* Darker pink border */
+}
+
+.modal-info {
+    margin-top: 20px;
+    position: relative; /* Ensure relative positioning for child elements */
+    flex: 1; /* Allow modal-info to take up remaining space */
+}
+
+.rating {
+    font-size: 1.2rem;
+    color: #db7093; 
+}
+
+.book-now-button {
+    margin-top: 10px;
+    z-index: 1100; /* Ensure it's above the review section */
+    background-color: #800080; /* Purple background */
+    color: white;
+    border: none;
+}
+
+.book-now-button:hover {
+    background-color: #4b0082; /* Darker purple on hover */
+}
+
+.review-section {
+    margin-top: 20px;
+    position: relative;
+}
+
+.review-textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.rating-input {
+    margin-bottom: 10px;
+}
+
+.reviews-list {
+    margin-top: 20px;
+}
+
+.review-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.review-item p {
+    margin: 0;
+}
+
+.btn-purple {
+    background-color: purple;
+    color: white;
+    border: none;
+}
+
+.btn-purple:hover {
+    background-color: darkviolet;
+    color: white;
+}
+
+.btn-purple:active {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.btn-pink {
+    background-color: #db7093; /* Pink background */
+    color: white;
+    border: none;
+}
+
+.btn-pink:hover {
+    background-color: #db7093; /* Darker pink on hover */
+}
+
+.btn-pink:active {
+    background-color: #db7093; /* Even darker pink on active */
+}
+
+/* Styles for the Booking Form modal */
+.booking-form-modal {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 0; /* No rounded corners for rectangular box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    z-index: 1200; /* Ensure it appears above the review section */
+}
+
+.booking-form-modal .btn-secondary {
+    margin-top: 10px;
+}

@@ -1,0 +1,35 @@
+.btn-purple {
+    background-color: #800080; /* Purple color */
+    color: white;
+    border: none;
+    padding: 6px 12px; /* Adjusted padding to decrease size */
+    font-size: 14px; /* Adjusted font size */
+}
+
+.btn-purple:hover {
+    background-color: #4b0082; /* Darker purple */
+    color: white;
+}
+
+.btn-purple:active {
+    background-color: #301934; /* Even darker purple */
+    color: white;
+}
+
+.btn-pink {
+    background-color: #ff69b4; /* Pink color */
+    color: white;
+    border: none;
+    padding: 6px 12px; /* Adjusted padding to decrease size */
+    font-size: 14px; /* Adjusted font size */
+}
+
+.btn-pink:hover {
+    background-color: #ff1493; /* Deeper pink */
+    color: white;
+}
+
+.btn-pink:active {
+    background-color: #c71585; /* Even deeper pink */
+    color: white;
+}

@@ -1,0 +1,53 @@
+.wishlist-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+  }
+  
+  .wishlist-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wishlist-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+  .wishlist-details {
+    flex-grow: 1;
+  }
+  
+  .wishlist-artist-name {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .wishlist-artist-genre {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .wishlist-artist-rate {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .wishlist-remove {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  

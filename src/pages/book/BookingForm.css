@@ -1,0 +1,37 @@
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.booking-form label {
+    font-weight: bold;
+    color: purple; /* Change label text color to purple */
+}
+
+.booking-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.booking-form button {
+    background-color: purple; /* Change button background color to purple */
+    color: white; /* Ensure the text color on the button is white for contrast */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.message {
+    margin-top: 10px;
+    font-size: 1rem;
+    text-align: center;
+    color: green; /* Default success message color */
+}
+
+.message.booking-unsuccessful {
+    color: red; /* Error message color */
+}

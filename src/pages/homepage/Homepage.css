@@ -1,0 +1,119 @@
+/* Add this to your CSS file */
+.btn-purple {
+  background-color: purple;
+  color: white;
+  border: none;
+}
+
+.btn-purple:hover {
+  background-color: darkviolet;
+  color: white;
+}
+
+/* Footer.css */
+
+.footer {
+background-color: rgb(147, 89, 147); /* Background color for the footer */
+width: 100%;
+padding: 20px 0; /* Increased padding for better spacing */
+position: relative;
+bottom: 0;
+left: 0;
+}
+
+.footer .container {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.social-btn {
+background-color: #54456b; /* Dark background for social buttons */
+}
+
+.social-btn .fab {
+color: darkviolet; /* White color for social icons */
+}
+
+.footer .text-white {
+color: #fff; /* White color for text */
+}
+
+.footer .copyright {
+background-color: rgba(0, 0, 0, 0.2); /* Slightly dark background for copyright */
+padding: 10px; /* Padding for the copyright section */
+font-size: 14px; /* Adjust font size if needed */
+}
+
+.footer .text-white a {
+color: #fff; /* Ensure link text is white */
+text-decoration: none; /* Remove underline from links */
+}
+
+.footer .text-white a:hover {
+text-decoration: underline; /* Add underline on hover for links */
+}
+
+/* Pagination CSS */
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+}
+
+.page-item {
+  margin: 0 0.25rem;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: purple;
+  background-color: white;
+  border: 1px solid #dee2e6;
+}
+
+.page-link:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #800080; /* Purple color */
+  border-color: #800080; /* Purple color */
+}
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: white;
+  background-color: #800080; /* Purple color */
+  border-color: #800080; /* Purple color */
+}
+
+.page-link:focus {
+  z-index: 2;
+  color: white;
+  background-color: #800080; /* Purple color */
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(128, 0, 128, 0.25);
+}
+
+.page-item.disabled .page-link {
+  color: #6c757d;
+  pointer-events: none;
+  background-color: #fff;
+  border-color: #dee2e6;
+}
+
+.page-item:not(.disabled) .page-link {
+  color: purple; /* Purple color for non-disabled links */
+  background-color: white;
+  border: 1px solid #dee2e6;
+}
+
+.page-item:not(.disabled) .page-link:hover {
+  color: white;
+  background-color: #800080; /* Purple color */
+  border-color: #800080; /* Purple color */
+}

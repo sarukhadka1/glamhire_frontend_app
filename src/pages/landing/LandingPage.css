@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.landing-container {
+    padding: 0;
+    background-color: #fef6f6;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.landing-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.landing-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login-btn {
+    background-color: #f8b400;
+    color: white;
+}
+
+.register-btn {
+    background-color: purple;
+    color: white;
+}
+
+.landing-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.text-container {
+    max-width: 50%;
+    text-align: left;
+    padding: 20px;
+}
+
+.text-container h2 {
+    font-size: 1.5rem;
+    color: purple;
+}
+
+.text-container h1 {
+    font-size: 3rem;
+    color: #333;
+    margin: 20px 0;
+}
+
+.text-container p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.appointment-btn {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.image-container {
+    max-width: 50%;
+}
+
+.landing-image {
+    width: 100%;
+    border-radius: 10px;
+}

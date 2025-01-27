@@ -1,0 +1,97 @@
+.artist-description-container {
+    padding: 50px;
+    background-color: #f8e1e1;
+}
+
+.artist-profile {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.artist-profile-image {
+    width: 300px; /* Make the image bigger */
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-top: 60px; /* Bring the image down */
+}
+
+.artist-info {
+    max-width: 600px;
+}
+
+.artist-info h2 {
+    font-size: 2rem;
+    color: #8e44ad;
+    margin-top: 20px; /* Bring the name down */
+    margin-bottom: 20px; /* Leave gap */
+}
+
+.artist-info .rating {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.artist-info .bio {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+    text-align: left; /* Center the text */
+}
+
+.pricing-plan {
+    margin-top: 50px;
+}
+
+.pricing-plan h3 {
+    font-size: 1.5rem;
+    color: #8e44ad;
+    margin-bottom: 30px;
+}
+
+.pricing-sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align pricing sections to the top */
+}
+
+.pricing-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 45%; /* Adjust width for side-by-side layout */
+}
+
+.pricing-section h4 {
+    font-size: 1.2rem;
+    color: #8e44ad;
+    margin-bottom: 15px;
+}
+
+.pricing-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-section ul li {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.services-button {
+    background-color: #8e44ad;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

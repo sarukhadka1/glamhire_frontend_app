@@ -1,0 +1,71 @@
+.booking-list-container {
+    padding: 20px;
+    background-color: #f8e6f0; /* Light pink background */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.booking-list-header {
+    color: #800080; /* Purple */
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.booking-table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.booking-styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+.booking-styled-table th, .booking-styled-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.booking-styled-table thead {
+    background-color: #800080; /* Purple */
+    color: #fff;
+}
+
+.booking-styled-table tbody tr:first-child {
+    background-color: white; 
+    color:black;
+}
+
+.booking-styled-table tbody tr {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.booking-styled-table tbody tr:hover {
+    background-color: #f0c0d0; /* Light pink hover effect */
+}
+
+.booking-back-button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #800080; /* Purple */
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Arial', sans-serif;
+}
+
+.booking-back-button:hover {
+    background-color: #c71585; /* Deep pink */
+}

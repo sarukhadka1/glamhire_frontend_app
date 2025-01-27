@@ -1,0 +1,91 @@
+/* Contact.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact-details, .opening-hours, .contact-us {
+    margin-bottom: 20px;
+}
+
+.contact-details h2, .opening-hours h2, .contact-us h2 {
+    color: #e91e63; /* Pink */
+    margin-bottom: 10px;
+}
+
+.contact-details p, .opening-hours p, .contact-us p {
+    margin: 5px 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group input, .form-group textarea {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #800080; /* Purple */
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button[type="submit"] {
+    background-color: #ff69b4; /* Pink */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff1493; /* Darker pink */
+}
+
+/* Success and Error Toast messages */
+/* .Toastify__toast--success {
+    background-color: #4caf50; 
+}
+
+.Toastify__toast--error {
+    background-color: #f44336; 
+} */
+

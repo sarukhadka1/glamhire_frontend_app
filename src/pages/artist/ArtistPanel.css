@@ -1,0 +1,58 @@
+.artist-panel-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #f8e1e1; /* Adjust background color if needed */
+}
+
+.artist-panel-container h2 {
+    font-size: 2.5rem;
+    color: purple;
+    margin-bottom: 60px; /* Increase margin to push the text further down */
+    font-family: 'Georgia', serif; /* Adjust font style if needed */
+}
+
+.artist-panel-container p {
+    color: purple;
+    margin-bottom: 40px;
+    font-size: 1.1rem; /* Adjust font size if needed */
+    font-family: 'Arial', sans-serif; /* Adjust font style if needed */
+}
+
+.artist-grid {
+    display: flex;
+    justify-content: space-between; /* Ensures items are spaced out equally */
+    gap: 10px; /* Reduce the gap between items */
+    flex-wrap: wrap; /* Ensures images wrap properly on smaller screens */
+}
+
+.artist-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1; /* Ensure cards are of equal width */
+    margin: 5px; /* Reduce margin to separate cards */
+    max-width: 300px; /* Adjust the max-width to make boxes rectangular */
+    text-decoration: none; /* Ensure links have no underline */
+    color: inherit; /* Ensure links inherit text color */
+}
+
+.artist-card img {
+    width: 100%;
+    height: 300px; /* Ensure equal height for all images */
+    object-fit: cover; /* Ensures images cover the entire box without distortion */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.see-all-button {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif; /* Adjust font style if needed */
+}

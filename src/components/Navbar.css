@@ -1,0 +1,19 @@
+/* Add this CSS to properly style the modal and form */
+.modal-content {
+  padding: 20px;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.btn-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+}
+
+/* Ensure the navbar occupies the full width */
+.navbar {
+  width: 100%;
+}

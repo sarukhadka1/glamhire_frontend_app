@@ -1,0 +1,79 @@
+.artist-container {
+    background-color: #fff0f5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Make the container smaller */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .artist-name {
+    font-size: 2rem;
+    color: #d63384;
+    font-weight: bold;
+  }
+  
+  .artist-genre {
+    font-size: 1.25rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+  }
+  
+  .artist-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .artist-rate {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .artist-image {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-pink {
+    background-color: #ff66b2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  
+  .btn-purple {
+    background-color: #800080;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .btn-pink:hover,
+  .btn-purple:hover {
+    opacity: 0.9;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .modal-dialog.modal-lg {
+    max-width: 60%; /* Make the forms extend from left to right */
+  }
+  
+  .modal-content {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  

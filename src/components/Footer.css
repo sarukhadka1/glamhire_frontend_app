@@ -1,0 +1,65 @@
+.footer {
+    background-color: #ffebf0; /* Light pink background */
+    color: #fff;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Girly font */
+    border-top: 2px solid #ff69b4; /* Pink border */
+    padding: 10px 0; /* Reduced padding for a shorter footer */
+    position: relative;
+  }
+  
+  .footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .footer-logo img {
+    width: 80px; /* Smaller logo size */
+    height: auto;
+  }
+  
+  .footer-name h2 {
+    color: #ff69b4; /* Pink color for name */
+    font-size: 24px; /* Adjusted size for better proportion */
+    margin: 0;
+  }
+  
+  .social-icons {
+    margin: 0;
+  }
+  
+  .social-icon {
+    background-color: #ff69b4; /* Pink background for social icons */
+    color: #fff;
+    border-radius: 50%;
+    padding: 8px; /* Reduced padding for smaller icons */
+    font-size: 18px; /* Smaller, cute icons */
+    margin: 0 4px; /* Reduced margin for closer spacing */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+  }
+  
+  .social-icon:hover {
+    background-color: #ff1493; /* Slightly darker pink on hover */
+  }
+  
+  .footer .copyright {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 12px; /* Smaller font size for copyright text */
+    text-align: center;
+    padding: 5px 0; /* Reduced padding for a shorter footer */
+  }
+  
+  .footer .copyright a {
+    color: #ff69b4; /* Pink color for links */
+    text-decoration: none;
+  }
+  
+  .footer .copyright a:hover {
+    text-decoration: underline;
+  }
+  
