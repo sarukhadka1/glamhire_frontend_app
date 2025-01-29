@@ -41,7 +41,13 @@ const config = {
 export const registerUserApi = (data) => Api.post('/api/user/create', data);
 
 // Login API
-export const loginUserApi = (data) => Api.post('/api/user/login', data);
+// export const loginUserApi = (data) => Api.post('/api/user/login', data);
+export const loginUserApi = (data) => {
+    return axios.post("https://localhost:5000/api/user/login", data, {
+      // or your actual endpoint
+      validateStatus: () => true,
+    });
+  };
 
 // Create artist API
 export const createArtistApi = (formData) => Api.post('/api/artist/create', formData, {
