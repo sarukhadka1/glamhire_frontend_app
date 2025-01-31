@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import { getUserBookings, updatePaymentMethod } from '../../apis/Api';
-import KhaltiCheckout from "khalti-checkout-web";
-import config from '../../components/KhaltiConfig';
+import KhaltiCheckout from 'khalti-checkout-web';
+import config from '../../components/KhaltiConfig'; // existing config import
 
 const UserBooking = () => {
     const [bookings, setBookings] = useState([]);
@@ -55,11 +55,65 @@ const UserBooking = () => {
         }
     };
 
-    const handleKhaltiPayment = () => {
-        let checkout = new KhaltiCheckout(config);
-        checkout.show({ amount: 200 });
-        handlePaymentMethod('Khalti');
+    // --------------------------------------------------------------------------------
+    // KHALTI CONFIG & PAYMENT HANDLER
+    // --------------------------------------------------------------------------------
+    const khaltiConfig = {
+        publicKey: 'test_public_key_0e1cf205988d4124b151e7a0288cefa4', // same as your sample
+        productIdentity: '1234567890',
+        productName: 'Doctor Payment',
+        productUrl: 'http://localhost:3000',
+        paymentPreference: [
+            'KHALTI',
+            'EBANKING',
+            'MOBILE_BANKING',
+            'CONNECT_IPS',
+            'SCT',
+        ],
+        eventHandler: {
+            onSuccess(payload) {
+                console.log('Khalti payment success payload:', payload);
+                toast.success('Khalti Payment Successful!');
+                // If you want to update DB only after successful payment,
+                // move handlePaymentMethod('Khalti') here.
+            },
+            onError(error) {
+                console.error('Khalti payment error:', error);
+                toast.error('Khalti Payment Failed!');
+            },
+            onClose() {
+                console.log('Khalti widget is closing');
+            },
+        },
     };
+
+
+    const handleKhaltiPayment = () => {
+        // Create a local config that overrides/extends your imported config
+        const localKhaltiConfig = {
+            ...config,
+            eventHandler: {
+                onSuccess(payload) {
+                    console.log('Khalti payment success payload:', payload);
+                    toast.success('Khalti Payment Successful!');
+                    // Update DB only after successful payment
+                    handlePaymentMethod('Khalti');
+                },
+                onError(error) {
+                    console.error('Khalti payment error:', error);
+                    toast.error('Khalti Payment Failed!');
+                },
+                onClose() {
+                    console.log('Khalti widget is closing');
+                },
+            },
+        };
+
+        let checkout = new KhaltiCheckout(localKhaltiConfig);
+        // We'll pass 1000 paisa => Rs. 10 to avoid the "Amount should be less than 200" error
+        checkout.show({ amount: 1000 });
+    };
+    // --------------------------------------------------------------------------------
 
     return (
         <div className="container mt-5">
@@ -106,9 +160,10 @@ const UserBooking = () => {
                     </tbody>
                 </table>
             )}
+
             {showPaymentModal && (
                 <div className="modal fade show" style={{ display: 'block' }}>
-                    <div className="modal-dialog modal-dialog-centered modal-lg"> {/* Made the modal wider by adding 'modal-lg' */}
+                    <div className="modal-dialog modal-dialog-centered modal-lg">
                         <div className="modal-content">
                             <div className="modal-header">
                                 <h5 className="modal-title">Select a payment method:</h5>
