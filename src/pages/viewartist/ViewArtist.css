@@ -91,7 +91,7 @@
 
 /* Ensure inputs are full width */
 .modal-body .form-control {
-  width: 100%; /* Makes form fields stretch to full width */
+  width: 80%; /* Makes form fields stretch to full width */
   padding: 10px;
 }
 
