@@ -57,6 +57,15 @@ export const createArtistApi = (formData) => Api.post('/api/artist/create', form
     }
 });
 
+// Add the following function to fetch all users
+export const getAllUsersApi = () => Api.get('/api/user/all', getConfig());
+ 
+// New logout API function
+export const logoutUserApi = () => Api.post('/api/user/logout', null, getConfig());
+
+// Get user details API
+export const getUserDetails = (userId) => Api.get(`/api/user/${userId}`, getConfig());
+
 // Get all artists API
 export const getAllArtists = () => Api.get('/api/artist/get_all_artists', getConfig());
 
