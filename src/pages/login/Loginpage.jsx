@@ -630,7 +630,7 @@ const Login = () => {
         localStorage.setItem("user", JSON.stringify(res.data.userData));
 
         if (res.data.userData.isAdmin) {
-          window.location.href = "/admindashboard";
+          window.location.href = "/admin/dashboard";
         } else {
           window.location.href = "/";
         }
