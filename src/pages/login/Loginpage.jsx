@@ -503,11 +503,12 @@
 
 
 import React, { useState } from "react";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 import { loginUserApi } from "../../apis/Api";
 import ReCAPTCHA from "react-google-recaptcha";
 import "./Loginpage.css";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Login = () => {
   const [email, setEmail] = useState("");
