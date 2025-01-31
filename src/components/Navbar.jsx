@@ -118,7 +118,7 @@ const Navbar = () => {
           if (response.status === 200 && response.data.success) {
             setWelcomeMessage(`Welcome back, ${response.data.user.firstName}!`);
           } else {
-            throw new Error(response.data.message || 'Failed to fetch user data');
+            throw new Error('Failed to fetch user data');
           }
         } catch (error) {
           console.error('Failed to fetch user data', error);
@@ -150,11 +150,13 @@ const Navbar = () => {
 
         // Show success toast notification
         toast.success(response.data.message || 'Logged out successfully!');
+        navigate('/login');
 
         // Navigate to login page after a short delay to allow toast to show
-        setTimeout(() => {
-          navigate('/login');
-        }, 1500);
+      //   setTimeout(() => {
+      //     navigate('/login');
+      //   }, 1500
+      // );
       } else {
         throw new Error(response.data.message || 'Logout failed');
       }
