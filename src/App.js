@@ -31,6 +31,7 @@ import Contact from './pages/contactus/ContactUs';
 import ViewArtist from './pages/viewartist/ViewArtist';
 import UserBooking from './pages/book/UserBooking';
 import BookingList from './admin/booking list/BookingList';
+import Users from './admin/users/Users';
 
 
 
@@ -76,6 +77,8 @@ function App() {
           <Route path='/admin/dashboard' element={<AdminDashboard />} />
           <Route path='/admin/update/:id' element={<UpdateArtist />} />
           <Route path='/admin/bookingList' element={<BookingList />} />
+          <Route path='/admin/users' element={<Users />} />
+          
           
 
         </Route>
