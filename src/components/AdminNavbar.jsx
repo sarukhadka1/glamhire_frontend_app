@@ -35,6 +35,9 @@ const AdminNavbar = () => {
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to="/admin/bookingList" style={{ color: 'purple' }}>Bookings</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/admin/users" style={{ color: 'purple' }}>Users</Link>
+              </li>
               
               
             </ul>
