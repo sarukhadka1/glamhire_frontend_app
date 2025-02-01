@@ -7,18 +7,7 @@
 
 
 
-//                         <div className="form-group">
-//                             <input type="text" name="firstName" placeholder="First Name" required value={formData.firstName} onChange={handleChange} />
-//                             <input type="text" name="lastName" placeholder="Last Name" required value={formData.lastName} onChange={handleChange} />
-//                         </div>
-//                         <div className="form-group">
-//                             <input type="email" name="email" placeholder="Email" required value={formData.email} onChange={handleChange} />
-//                         </div>
-//                         <div className="form-group">
-//                             <textarea name="message" placeholder="Message" required value={formData.message} onChange={handleChange}></textarea>
-//                         </div>
-//                         <button type="submit">Send Message</button>
-//                     </form>
+
 //                 </div>
 //             </div>
 //             <ToastContainer position="top-right" autoClose={5000} hideProgressBar={false} newestOnTop={true} closeOnClick pauseOnFocusLoss draggable pauseOnHover />
