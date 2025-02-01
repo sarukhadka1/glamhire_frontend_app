@@ -34,9 +34,9 @@ const config = {
         "Content-Type": "application/json",
         authorization: `Bearer ${localStorage.getItem("token")}`,
     },
-  }
+}
 
-  
+
 // Register API
 export const registerUserApi = (data) => Api.post('/api/user/create', data);
 
@@ -44,10 +44,10 @@ export const registerUserApi = (data) => Api.post('/api/user/create', data);
 // export const loginUserApi = (data) => Api.post('/api/user/login', data);
 export const loginUserApi = (data) => {
     return axios.post("https://localhost:5000/api/user/login", data, {
-      // or your actual endpoint
-      validateStatus: () => true,
+        // or your actual endpoint
+        validateStatus: () => true,
     });
-  };
+};
 
 // Create artist API
 export const createArtistApi = (formData) => Api.post('/api/artist/create', formData, {
@@ -59,7 +59,7 @@ export const createArtistApi = (formData) => Api.post('/api/artist/create', form
 
 // Add the following function to fetch all users
 export const getAllUsersApi = () => Api.get('/api/user/all', getConfig());
- 
+
 // New logout API function
 export const logoutUserApi = () => Api.post('/api/user/logout', null, getConfig());
 
@@ -85,14 +85,14 @@ export const updateArtist = (id, data) => Api.put(`/api/artist/update_artist/${i
 export const artistPagination = (page, limit, searchQuery = "", sortOrder = "asc") => {
     const query = `?page=${page}&limit=${limit}&q=${searchQuery}&sort=${sortOrder}`;
     return Api.get(`/api/artist/pagination${query}`);
-  };
+};
 
-  export const getArtistCount = () => Api.get("/api/artist/get_artists_count");
-  
+export const getArtistCount = () => Api.get("/api/artist/get_artists_count");
 
-  // Get user profile API
+
+// Get user profile API
 export const getUserProfileApi = () => Api.get('/api/user/profile', getConfig());
- 
+
 // Update user profile API
 export const updateUserProfileApi = (data) => Api.put('/api/user/profile', data, getConfig());
 
@@ -108,27 +108,30 @@ export const getReviewsApi = (artistId) => Api.get(`/api/rating/artist/${artistI
 // wishlist
 
 export const getUserWishlistApi = () => Api.get('api/wishlist/all', config);
- 
+
 export const addToWishlistApi = (artistId) => {
-  return Api.post(`/api/wishlist/add`, { artistId }, config);
+    return Api.post(`/api/wishlist/add`, { artistId }, config);
 };
- 
-export const removeFromWishlistApi = (artistId) => Api.delete( `api/wishlist/remove/${artistId}`, config);
+
+export const removeFromWishlistApi = (artistId) => Api.delete(`api/wishlist/remove/${artistId}`, config);
 
 
 //bookings
- 
+
 export const getAllBookings = () => Api.get('/api/booking/all_bookings', config)
- 
+
 export const createBooking = (bookingData) => Api.post('/api/booking/bookings', bookingData, config);
- 
+
 export const updateBookingStatus = (updateData) => Api.put('/api/booking/bookings/status', updateData, config)
- 
+
 export const getUserBookings = () => Api.get('/api/booking/mybookings', config);
- 
+
 export const updatePaymentMethod = (paymentData) => Api.put('/api/booking/bookings/payment', paymentData, config)
- 
+
 
 
 
 export const getAllContacts = () => Api.get('/api/contact/all', config);
+
+export const verifyEmailApi = (data) =>
+    Api.put(`/api/user/verifyEmail/${data.token}`);
