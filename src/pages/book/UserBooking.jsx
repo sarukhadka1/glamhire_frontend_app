@@ -128,6 +128,7 @@ const UserBooking = () => {
                             <th>Date</th>
                             <th>Time</th>
                             <th>Status</th>
+                            <th>Payment Method</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -139,6 +140,16 @@ const UserBooking = () => {
                                     <td>{new Date(booking.date).toLocaleDateString()}</td>
                                     <td>{booking.time}</td>
                                     <td>{booking.status}</td>
+
+                                    {/* Show Payment Method Here */}
+                                    <td>
+                                        {booking?.paymentMethod === 'Khalti'
+                                            ? 'Paid by Khalti'
+                                            : booking?.paymentMethod === 'Cash on arrival'
+                                                ? 'Cash on Arrival'
+                                                : 'Not Paid'}
+                                    </td>
+
                                     <td>
                                         <button
                                             className="btn btn-secondary"
