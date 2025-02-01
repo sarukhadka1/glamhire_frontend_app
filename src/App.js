@@ -46,8 +46,6 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
 
-        
-
         <Route path='/artist' element={<ArtistPanel />} />
         <Route path='/artist/saru-khadka' element={<ArtistDescription />} />
         <Route path='/services' element={<Services />} />
@@ -65,13 +63,6 @@ function App() {
         <Route path='/view/:id' element={<ViewArtist/>} />
         <Route path='/my_bookings' element={<UserBooking/>} />
 
-        
-        
-
-        {/* admin route */}
-        {/* <Route path='/admin/dashboard' element={<AdminDashboard />} />
-        <Route path='/admin/update/:id' element={<UpdateArtist />} /> */}
-
        
 <Route element={<AdminRoutes/>}>
           <Route path='/admin/dashboard' element={<AdminDashboard />} />
@@ -79,8 +70,6 @@ function App() {
           <Route path='/admin/bookingList' element={<BookingList />} />
           <Route path='/admin/users' element={<Users />} />
           
-          
-
         </Route>
  
 
