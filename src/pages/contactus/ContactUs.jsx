@@ -5,15 +5,7 @@
 
 
 
-//     const handleSubmit = async (e) => {
-//         e.preventDefault();
-//         try {
-//             const response = await axios.post('https://localhost:5000/api/contact/contact', formData);
-//             toast.success(response.data.message || 'Form submitted successfully');
-//             setFormData({ firstName: '', lastName: '', email: '', message: '' });
-//         } catch (error) {
-//             toast.error((error.response && error.response.data && error.response.data.message) || 'Error submitting form');
-//         }
+
 //     };
 
 //     return (
