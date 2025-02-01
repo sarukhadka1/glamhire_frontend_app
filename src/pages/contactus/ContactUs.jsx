@@ -6,16 +6,7 @@
 
 
 
-//     };
 
-//     return (
-//         <div>
-            
-//             <div className="contact-container">
-//                 <div className="contact-us">
-//                     <h2>Contact Us</h2>
-//                     <p>For inquiries on services, please leave a message and we will get back to you within 24 hours. We look forward to hearing from you!</p>
-//                     <form className="contact-form" onSubmit={handleSubmit}>
 //                         <div className="form-group">
 //                             <input type="text" name="firstName" placeholder="First Name" required value={formData.firstName} onChange={handleChange} />
 //                             <input type="text" name="lastName" placeholder="Last Name" required value={formData.lastName} onChange={handleChange} />
