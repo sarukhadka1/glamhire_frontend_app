@@ -34,7 +34,7 @@
   },
   "scripts": {
     "start": "set HTTPS=true&&set SSL_CRT_FILE=server.crt&&set SSL_KEY_FILE=server.key&&react-scripts start",
-    "build": "react-scripts build",
+    "build": " react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!axios)/\"",
     "eject": "react-scripts eject"
   },
