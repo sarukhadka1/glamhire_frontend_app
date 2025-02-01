@@ -8,14 +8,7 @@
 
 
 
-//                 </div>
-//             </div>
-//             <ToastContainer position="top-right" autoClose={5000} hideProgressBar={false} newestOnTop={true} closeOnClick pauseOnFocusLoss draggable pauseOnHover />
-//         </div>
-//     );
-// };
 
-// export default Contact;
 
 
 import axios from 'axios';
