@@ -629,6 +629,7 @@ const Login = () => {
         setRemainingAttempts(null); // Clear attempts if any
         localStorage.setItem("token", res.data.token);
         localStorage.setItem("user", JSON.stringify(res.data.userData));
+        toast.success(res.data.message);
 
         if (res.data.userData.isAdmin) {
           window.location.href = "/admin/dashboard";
