@@ -32,8 +32,7 @@ import ViewArtist from './pages/viewartist/ViewArtist';
 import UserBooking from './pages/book/UserBooking';
 import BookingList from './admin/booking list/BookingList';
 import Users from './admin/users/Users';
-
-
+import VerifyEmail from './pages/verifyEmail/verifyEmail';
 
 
 function App() {
@@ -43,6 +42,7 @@ function App() {
       <ToastContainer />
       <Routes>
         <Route path='/homepage' element={<Homepage />} />
+        <Route path='/verify-email/:token' element={<VerifyEmail />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
 
